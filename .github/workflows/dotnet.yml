@@ -24,7 +24,9 @@ jobs:
         cd SimpleMapper
         dotnet build --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: |
+        cd SimpleMapper
+        dotnet test --no-build --verbosity normal
     - name: Pack
       run: |
         dotnet nuget add source --username sickwick --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/sickwick/index.json"
