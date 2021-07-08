@@ -1,6 +1,7 @@
 SimpleMapper - small library for mapping types easily.
 
-To use the library, you need to install the nuget package {link}
+To use the library, you need to download package from github and run
+`dotnet add <YOUR_PROJECT_NAME> package SimpleMapper --version 1.0.0`
 
 For use in WebApi apps you need to add in Startup.cs single line in ConfigureServices func.
 Like this - `services.AddSimpleMapper()`
