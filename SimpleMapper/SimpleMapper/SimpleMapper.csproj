@@ -2,6 +2,12 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp3.1</TargetFramework>
+        <OutputType>Exe</OutputType>
+        <PackageId>SimpleMapper</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>Sickwick</Authors>
+        <PackageDescription>Packege for mapping types</PackageDescription>
+        <RepositoryUrl>https://github.com/sickwick/simpleMapper</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
