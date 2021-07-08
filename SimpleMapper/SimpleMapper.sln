@@ -1,10 +1,30 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMapper", "SimpleMapper\SimpleMapper.csproj", "{667CB9A6-11E5-4D1B-B58B-7219B061DCEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMapper.Tests", "SimpleMapper.Tests\SimpleMapper.Tests.csproj", "{14C68A73-A011-49B3-A5AB-3CF14FA7C1CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{33FCF291-D8EC-45E7-BB21-DE05B8F01865}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{78AA7AE5-CED7-403C-A28C-28FE797A7D8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{667CB9A6-11E5-4D1B-B58B-7219B061DCEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{667CB9A6-11E5-4D1B-B58B-7219B061DCEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{667CB9A6-11E5-4D1B-B58B-7219B061DCEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{667CB9A6-11E5-4D1B-B58B-7219B061DCEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14C68A73-A011-49B3-A5AB-3CF14FA7C1CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14C68A73-A011-49B3-A5AB-3CF14FA7C1CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14C68A73-A011-49B3-A5AB-3CF14FA7C1CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14C68A73-A011-49B3-A5AB-3CF14FA7C1CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{667CB9A6-11E5-4D1B-B58B-7219B061DCEA} = {33FCF291-D8EC-45E7-BB21-DE05B8F01865}
+		{14C68A73-A011-49B3-A5AB-3CF14FA7C1CC} = {78AA7AE5-CED7-403C-A28C-28FE797A7D8B}
 	EndGlobalSection
 EndGlobal
