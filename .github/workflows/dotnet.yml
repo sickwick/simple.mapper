@@ -16,16 +16,21 @@ jobs:
       with:
         dotnet-version: 3.1.101
     - name: Restore dependencies
-      run: dotnet restore
+      run: |
+        cd SimpleMapper
+        dotnet restore
     - name: Build
-      run: dotnet build --no-restore
+      run: |
+        cd SimpleMapper
+        dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Pack
       run: |
         dotnet nuget add source --username sickwick --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/sickwick/index.json"
+        cd SimpleMapper
         dotnet pack --configuration Release
-        dotnet nuget push "bin/Release/SimpleMapper.1.0.0.nupkg" --source "github"
+        dotnet nuget push "SimpleMapper/bin/Release/SimpleMapper.1.0.0.nupkg" --source "github"
 
 
         
